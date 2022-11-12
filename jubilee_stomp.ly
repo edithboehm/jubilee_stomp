@@ -9,8 +9,8 @@
 		\relative c'' {
 			#(set-accidental-style 'modern-cautionary)
 			\key f \minor
-			h1 b a f2 r2 r1 r1
-			h2 b a f4 a
+			h1 b as f2 r2 r1 r1
+			h2 b as f4 as
 		}
 	}
 	\new ChordNames {
@@ -52,36 +52,36 @@
 			\bar "||"
 			^\segno
 			\clef alto
-			f'8 e f as c as
-			f e f as c as
-			f e f as c4 es2. r1
+			f'8 (e f as c as)
+			f (e f as c as)
+			f (e f as c4 es2.) r1
 
-			f,8 e f as c as
-			f e f as c as
-			f e f as ces4 es2. r1
+			f,8 (e f as c as)
+			f   (e f as c as)
+			f   (e f as ces4 es2.) r1
 
-			r8 c h c b g e c
-			c' h b g e c h c
+			r8 c (h c b g e c)
+			c' (h b g e c) h c
 
 			des-4 c f e as-2 g des'-4 g,
 			c-4 g h g b g e c
 
-			h-1 c d e d c
-			h c d e d c
-			h c d e
-			f4 r h2 b as
+			h-1 (c d e d c)
+			h (c d e d c)
+			h (c d e
+			f4) r h2 b as
 
-			f8 e f as c as
-			f e f as c as
-			f e f as c4 es2. r1
+			f8 (e f as c as)
+			f  (e f as c as)
+			f  (e f as c4 es2.) r1
 
-			r8 as, g as ges-2 es c as
-			as' g ges-2 es c as b c
+			r8 as, (g as ges-2 es c as)
+			as' (g ges-2 es c as) b c
 			des-2 f c es des c4 b8-2 as2 r
 
-			f'8 e f g as g f
-			e f g as g f
-			e f g as g
+			f'8 (e f g as g)
+			f   (e f g as g)
+			f   (e f g as g)
 			as b c es4 c8
 			g g g4 g f
 			r4 c r8 c4 b8
@@ -137,12 +137,11 @@
 				r4 es8 es4 f8 es4
 			}
 			\alternative {
-				{ b4 c es b8 c8 ~ c f b,4 c2
+				{ b4 c es b8 c8 ~ c f b,4 c2 }
+				{ as4 _\markup{"Next Impro... dann "\musicglyph #"scripts.segno"} r2. r1 }
 			}
-			{ as4 _\markup{"Next Impro... dann "\musicglyph #"scripts.segno"} r2. }
 		}
 	}
-}
 >>
 \new StaffGroup <<
 	\new ChordNames {
